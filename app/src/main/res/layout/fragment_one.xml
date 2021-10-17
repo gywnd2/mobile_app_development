@@ -7,13 +7,13 @@
     android:padding="20dp"
     tools:context=".FragmentOne">
 
-    <TextView
+    <EditText
         android:id="@+id/frag1_text"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:textColor="@color/black"
         android:textSize="20sp"
-        android:text="Fragment1"
+        android:hint="Fragment1"
         app:layout_constraintBottom_toTopOf="@id/frag1_button_send"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

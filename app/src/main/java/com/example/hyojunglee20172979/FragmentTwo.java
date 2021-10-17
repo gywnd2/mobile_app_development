@@ -30,4 +30,8 @@ public class FragmentTwo extends Fragment {
         super.onDestroyView();
         binding=null;
     }
+
+    public void changeText(String text){
+        binding.frag2Text.setText(text);
+    }
 }
