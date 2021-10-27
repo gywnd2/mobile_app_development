@@ -4,41 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="sendText"
     android:padding="30dp"
-    tools:context=".MainActivity">
+    tools:context=".SecondActivity">
 
     <TextView
-        android:id="@+id/textview1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="sendText"
-        android:text="@string/textview1"
+        android:id="@+id/textview2"
+        android:text="@string/textview2"
         android:textSize="20sp"
         android:textColor="@color/black"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/editText1"/>
+        app:layout_constraintBottom_toTopOf="@id/editText2"/>
 
     <EditText
-        android:id="@+id/editText1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/button1"
+        android:id="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@id/textview2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview1" />
+        app:layout_constraintBottom_toTopOf="@id/button2"/>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button1"
+        android:onClick="returnText"
+        android:text="@string/button2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editText1" />
+        app:layout_constraintTop_toBottomOf="@id/editText2" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

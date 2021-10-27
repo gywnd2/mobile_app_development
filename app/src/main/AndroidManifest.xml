@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HyoJungLee20172979">
         <activity
+            android:name=".SecondActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:configChanges="orientation|fontScale"
             android:exported="true">
