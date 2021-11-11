@@ -4,4 +4,5 @@
     <string name="textview2">TextView_2</string>
     <string name="button1">SEND</string>
     <string name="button2">REPLY</string>
+    <string name="button3">START SERVICE</string>
 </resources>
